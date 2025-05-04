@@ -24,7 +24,7 @@
 
 ## How to Run:
 
-### FFMpeg Setup (Windows Only)
+### FFMpeg Setup (Windows)
 
 1. **Download FFMpeg**  
    Visit the following link and download the latest static build:  
@@ -45,6 +45,22 @@ C:\ffmpeg\bin
 
 4. The script will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually.
 
+### FFMpeg Setup (Linux)
+
+
+Debian/Ubuntu/Kubuntu/Linux Mint:
+```bash
+sudo apt update
+sudo apt install ffmpeg
+```
+Fedora:
+```bash
+sudo dnf install ffmpeg
+```
+Arch/Manjaro:
+```bash
+sudo pacman -S ffmpeg
+```
 
 ### Install Requirements
 
@@ -55,7 +71,6 @@ pip install -r requirements.txt
 ```
 Or run: 
 - `install_requirements.bat`
-
   
   <br>
 
