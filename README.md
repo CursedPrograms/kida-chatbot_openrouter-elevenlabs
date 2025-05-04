@@ -56,15 +56,15 @@ C:\ffmpeg\bin
 
    - Click **OK** to apply the changes
   
-     5. Test it
+5. Test it
      Close and reopen your terminal (CMD), then type:
 
     ```
     ffmpeg -version
     ```
-If it prints the version info, you're good.
+    If it prints the version info, you're good.
 
-5. The code below will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually. 
+6. The code below will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually. 
 
 ```bash
 # === CONFIG ===
