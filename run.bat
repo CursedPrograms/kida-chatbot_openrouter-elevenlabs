@@ -9,7 +9,7 @@ if not exist "%VENV_DIR%" (
 )
 
 rem 
-call "%VENV_DIR%\Scripts\activate" && kida-chatbot.py
+call "%VENV_DIR%\Scripts\activate" && main.py
 
 rem 
 pause

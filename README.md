@@ -24,6 +24,25 @@
 
 ## How to Run:
 
+### FFMpeg Setup (Windows Only)
+
+1. **Download FFMpeg**  
+   Visit the following link and download the latest static build:  
+   https://www.gyan.dev/ffmpeg/builds/
+
+2. **Extract the Archive**  
+   Unzip the downloaded archive to `C:\`.
+
+3. **Rename and Organize**  
+   Rename the extracted folder to `ffmpeg`, and ensure the following folder structure:
+C:\ffmpeg\bin
+├── ffmpeg.exe
+├── ffplay.exe
+└── ffprobe.exe
+
+4. The script will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually.
+
+
 ### Install Requirements
 
 Using Python directly:
@@ -58,6 +77,8 @@ Unix-like systems (Linux/macOS):
   <br>
 
 ## Requirements:
+
+FFMpeg
 
 ```bash
 whisper

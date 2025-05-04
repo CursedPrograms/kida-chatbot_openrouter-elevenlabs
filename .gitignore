@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+elevenlabs-api-key.txt/
+openrouter-api-key.txt/
+
 # C extensions
 *.so
 

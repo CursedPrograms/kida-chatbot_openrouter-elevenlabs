@@ -14,14 +14,14 @@ def main():
 
     scripts = {
         "1": {
-            "name": "Run 'Script00'",
-            "description": "This is Script01",
-            "file_name": "scripts/script00.py"
+            "name": "Run 'kida-chatbot-plus.py'",
+            "description": "Kida Chatbot Plus",
+            "file_name": "kida-chatbot-plus.py"
         },
         "2": {
-            "name": "Run 'Script01",
-            "description": "This is Script01",
-            "file_name": "scripts/script01.py"
+            "name": "Run 'kida-chatbot.py",
+            "description": "Kida Chatbot",
+            "file_name": "kida-chatbot.py"
         },
         "00": {
             "name": "Run 'install_dependencies.py'",
