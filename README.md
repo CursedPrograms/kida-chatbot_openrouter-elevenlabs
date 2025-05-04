@@ -43,7 +43,14 @@ C:\ffmpeg\bin
 └── ffprobe.exe
 ```
 
-4. The script will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually.
+4. The script will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually. 
+
+```bash
+# === CONFIG ===
+
+# Path fix for ffmpeg
+os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
+```
 
 ### FFMpeg Setup (Linux)
 
