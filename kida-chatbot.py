@@ -7,9 +7,6 @@ from elevenlabs import play
 
 # === CONFIG ===
 
-# Path fix for ffmpeg
-os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
-
 # Whisper model
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 AUDIO_FILE = os.path.join(BASE_DIR, "input.wav")
@@ -22,8 +19,8 @@ def load_key(path):
         return f.readline().strip()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-OPENROUTER_API_KEY = load_key(os.path.join(BASE_DIR, "openrouter-api-key.txt"))
-ELEVEN_API_KEY = load_key(os.path.join(BASE_DIR, "elevenlabs-api-key.txt"))
+OPENROUTER_API_KEY = load_key(os.path.join(BASE_DIR, "keys/openrouter-api-key.txt"))
+ELEVEN_API_KEY = load_key(os.path.join(BASE_DIR, "keys/elevenlabs-api-key.txt"))
 
 # ElevenLabs client
 client = ElevenLabs(api_key=ELEVEN_API_KEY)

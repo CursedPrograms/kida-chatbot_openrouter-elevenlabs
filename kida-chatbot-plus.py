@@ -9,9 +9,6 @@ import threading
 
 # === CONFIG ===
 
-# Path fix for ffmpeg
-os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
-
 # Whisper model
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 AUDIO_FILE = os.path.join(BASE_DIR, "input.wav")
