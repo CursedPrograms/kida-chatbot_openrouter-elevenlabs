@@ -20,7 +20,7 @@
   </div>
   <br>
 
-# Python-Template
+# kida-chatbot_openrouter-elevenlabs
 
 ## How to Run:
 
@@ -42,7 +42,7 @@ Or run:
 Using Python directly:
 
 ```bash
-python main.py
+python kida-chatbot.py
 ```
 
 Using provided scripts:
@@ -60,7 +60,13 @@ Unix-like systems (Linux/macOS):
 ## Requirements:
 
 ```bash
-
+whisper
+SpeechRecognition
+pygame
+requests
+elevenlabs==0.2.26
+torch
+torchaudio
 ```
 
 <br>
