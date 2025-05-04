@@ -35,10 +35,13 @@
 
 3. **Rename and Organize**  
    Rename the extracted folder to `ffmpeg`, and ensure the following folder structure:
+
+```bash
 C:\ffmpeg\bin
 ├── ffmpeg.exe
 ├── ffplay.exe
 └── ffprobe.exe
+```
 
 4. The script will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually.
 
