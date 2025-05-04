@@ -16,12 +16,12 @@ def main():
         "1": {
             "name": "Run 'kida-chatbot-plus.py'",
             "description": "Kida Chatbot Plus",
-            "file_name": "kida-chatbot-plus.py"
+            "file_name": "scripts/kida-chatbot-plus.py"
         },
         "2": {
             "name": "Run 'kida-chatbot.py",
             "description": "Kida Chatbot",
-            "file_name": "kida-chatbot.py"
+            "file_name": "scripts/kida-chatbot.py"
         },
         "00": {
             "name": "Run 'install_dependencies.py'",

@@ -1,6 +1,6 @@
 {
     "Config": {
-      "AppName": "TemplateProject",
+      "AppName": "kida-chatbot_openrouter-elevenlabs",
       "Description": "",
       "ProjectStructure": {
         "MainScript": "main.py",
