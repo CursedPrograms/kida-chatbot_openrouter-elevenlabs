@@ -24,9 +24,16 @@
 
 ## How to Run:
 
-Get OpenRouter and ElevenLabs API Keys:
-Paste the OpenRouter Key in openrouter-api-key.txt
-Paste the ElevenLabs Key in elevenlabs-api-key.txt
+### Get OpenRouter and ElevenLabs API Keys
+
+1. **Get your API keys** from:
+   - [OpenRouter](https://openrouter.ai/)
+   - [ElevenLabs](https://elevenlabs.io/)
+
+2. **Save the keys in text files:**
+   - Paste your **OpenRouter** key into a file named: `openrouter-api-key.txt`
+   - Paste your **ElevenLabs** key into a file named: `elevenlabs-api-key.txt`
+
 
 ### FFMpeg Setup (Windows)
 
