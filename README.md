@@ -43,7 +43,18 @@ C:\ffmpeg\bin
 └── ffprobe.exe
 ```
 
-4. Set up Environment variables User variables for (PC Name) Path > New > Paste C:\ffmpeg\bin
+4. **Set Environment Variable (Optional for Global Access)**  
+   To make `ffmpeg` accessible system-wide:
+
+   - Open **System Properties** > **Environment Variables**
+   - Under **User variables** (for your PC username), find and select **Path**
+   - Click **Edit** > **New** and paste:
+
+     ```
+     C:\ffmpeg\bin
+     ```
+
+   - Click **OK** to apply the changes
 
 5. The code below will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually. 
 
