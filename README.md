@@ -43,7 +43,9 @@ C:\ffmpeg\bin
 └── ffprobe.exe
 ```
 
-4. The script will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually. 
+4. Set up Environment variables User variables for (PC Name) Path > New > Paste C:\ffmpeg\bin
+
+5. The code below will automatically append `C:\ffmpeg\bin` to the runtime path, so no need to set environment variables manually. 
 
 ```bash
 # === CONFIG ===
