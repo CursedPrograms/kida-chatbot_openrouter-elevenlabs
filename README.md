@@ -109,7 +109,7 @@ pip install -r requirements.txt
 ```
 Or run: 
 - `install_requirements.bat` - Windows
-- `install_requirements.sh` - Debian, Ubuntu, Raspberry Pi OS, Linux Mint
+- `install_requirements.sh` - Debian/Ubuntu/Kubuntu/Linux Mint
   
 <br>
 
