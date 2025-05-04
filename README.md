@@ -86,7 +86,6 @@ os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
 
 ### FFMpeg Setup (Linux)
 
-
 Debian/Ubuntu/Kubuntu/Linux Mint:
 ```bash
 sudo apt update
@@ -109,9 +108,10 @@ Using Python directly:
 pip install -r requirements.txt
 ```
 Or run: 
-- `install_requirements.bat`
+- `install_requirements.bat` - Windows
+- `install_requirements.sh` - Debian, Ubuntu, Raspberry Pi OS, Linux Mint
   
-  <br>
+<br>
 
 ### Run main.py
 
