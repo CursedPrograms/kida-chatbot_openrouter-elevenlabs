@@ -24,6 +24,10 @@
 
 ## How to Run:
 
+Get OpenRouter and ElevenLabs API Keys:
+Paste the OpenRouter Key in openrouter-api-key.txt
+Paste the ElevenLabs Key in elevenlabs-api-key.txt
+
 ### FFMpeg Setup (Windows)
 
 1. **Download FFMpeg**  
