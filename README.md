@@ -31,8 +31,8 @@
    - [ElevenLabs](https://elevenlabs.io/)
 
 2. **Save the keys in text files:**
-   - Paste your **OpenRouter** key into a file named: `openrouter-api-key.txt`
-   - Paste your **ElevenLabs** key into a file named: `elevenlabs-api-key.txt`
+   - Paste your **OpenRouter** key into the file named: `openrouter-api-key.txt`
+   - Paste your **ElevenLabs** key into the file named: `elevenlabs-api-key.txt`
 
 
 ### FFMpeg Setup (Windows)
