@@ -4,6 +4,7 @@ import whisper
 import requests
 from elevenlabs.client import ElevenLabs
 from elevenlabs import play
+import re
 
 # === CONFIG ===
 
@@ -30,9 +31,19 @@ print("🎙️ Using voice: Rachel")
 
 # === VOICE OUTPUT ===
 def speak(text):
-    # Optional: convert *sassy tone* to "sassy tone"
-    spoken = text.replace("*", "")  # Or replace("*", "star ") to be literal
+    # Extract expression keywords like "wink", "smile", etc. (you can expand this list)
+    expression_match = re.search(r"\b(wink|smile|frown|blush)\b", text)
+    expression = expression_match.group(1) if expression_match else None
+
+    # Remove the expression from spoken text
+    spoken = re.sub(r"\b(wink|smile|frown|blush)\b", "", text)
+    spoken = spoken.replace("*", "").strip()
+
+    # Debug print
+    if expression:
+        print("Expression:", expression)
     print("KIDA says:", spoken)
+
     try:
         audio = client.generate(
             text=spoken,
@@ -43,6 +54,8 @@ def speak(text):
     except Exception as e:
         print("Voice error:", e)
         print(spoken)
+
+    return expression
 
 # === LLM REQUEST ===
 def ask_llm(prompt):
