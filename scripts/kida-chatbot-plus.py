@@ -6,6 +6,7 @@ from elevenlabs.client import ElevenLabs
 from elevenlabs import play
 import pygame
 import threading
+import re
 
 # === CONFIG ===
 
@@ -69,10 +70,20 @@ def init_display():
 
 # === VOICE OUTPUT ===
 def speak(text):
-    spoken = text.replace("*", "")  # Optional cleanup
+    # Extract expression keywords like "wink", "smile", etc. (you can expand this list)
+    expression_match = re.search(r"\b(wink|smile|frown|blush)\b", text)
+    expression = expression_match.group(1) if expression_match else None
+
+    # Remove the expression from spoken text
+    spoken = re.sub(r"\b(wink|smile|frown|blush)\b", "", text)
+    spoken = spoken.replace("*", "").strip()
+
+    # Debug print
+    if expression:
+        print("Expression:", expression)
     print("KIDA says:", spoken)
+
     try:
-        update_image(os.path.join(BASE_DIR, "images", "talking.png"))
         audio = client.generate(
             text=spoken,
             voice=selected_voice,
@@ -82,8 +93,12 @@ def speak(text):
     except Exception as e:
         print("Voice error:", e)
         print(spoken)
+
+
     finally:
         update_image(os.path.join(BASE_DIR, "images", "idle.png"))
+
+    return expression
 
 # === LLM REQUEST ===
 def ask_llm(prompt):
